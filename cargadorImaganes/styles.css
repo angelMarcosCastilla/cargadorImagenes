@@ -1,0 +1,66 @@
+*::after,::before{
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-color: #008793;
+}
+
+.container{
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.drag-drop{
+  height: 300px;
+  display: grid;
+  place-items: center;
+  border: 4px dotted #051937;
+  margin-bottom: 3rem;
+}
+
+.drag-drop--active{
+  background:#bde8ec;
+}
+.drag-drop p {
+  color: #051937;
+  font-size: 24px;
+}
+
+.file{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #00bf72;
+}
+
+.progress{
+  margin-top: 30px;
+  appearance: none;
+  display: none;
+}
+
+.progress--active{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.progress::-webkit-progress-bar{
+  background-color: #d2e2fa;
+  border-radius: 20px;
+
+}
+.progress::-webkit-progress-value{
+  background-image: linear-gradient(to right top, #008793, #00bf72);
+  border-radius: 20px;
+  
+}
